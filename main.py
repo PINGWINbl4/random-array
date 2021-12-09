@@ -9,7 +9,7 @@ try:
         break
 except(Exception):
     logger.info(n)
-    logger.error('')
+    logger.error('некорректоное число')
     print('Вы ввели некорректоное число')
 # Формируем строку из аллементов
 a = []
@@ -24,5 +24,6 @@ while a !=[]:
 # Удаляем выведенный элемент
     n -= 1
     a.pop(x)
-logger.info(new_a, n)
 print()
+string = "".join(map(str, new_a))
+logger.info(string, n)
