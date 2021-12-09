@@ -12,6 +12,7 @@ except(Exception):
     logger.error('некорректоное число')
     print('Вы ввели некорректоное число')
 # Формируем строку из аллементов
+logger.info(n)
 a = []
 new_a = []
 for i in range(n):
@@ -25,5 +26,4 @@ while a !=[]:
     n -= 1
     a.pop(x)
 print()
-string = "".join(map(str, new_a))
-logger.info(string, n)
+logger.info(str(new_a))
